@@ -1,0 +1,11 @@
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Packaging
+.pixi/
+.pytest_cache/
+
+# Keep empty data folder
+/data/*
+!/data/.gitkeep

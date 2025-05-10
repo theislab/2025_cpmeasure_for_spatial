@@ -1,0 +1,18 @@
+[project]
+name = "2025_cpmeasure_for_spatial"
+version = "0.1.0"
+description = "Application of cp_measure to spatial data"
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "jupyterlab",
+    "ipykernel",
+    "centrosome>=1.2.1,<2",
+]
+
+[tool.uv]
+editable = ["src"]
