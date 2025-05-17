@@ -13,6 +13,3 @@ dependencies = [
     "ipykernel",
     "centrosome>=1.2.1,<2",
 ]
-
-[tool.uv]
-editable = ["src"]

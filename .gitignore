@@ -9,3 +9,6 @@
 # Keep empty data folder
 /data/*
 !/data/.gitkeep
+
+# API key
+/notebooks/cellarium_api_key.json
