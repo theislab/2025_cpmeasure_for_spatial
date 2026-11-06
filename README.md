@@ -15,8 +15,8 @@ Preprint: [arXiv:2507.01163](https://arxiv.org/abs/2507.01163)
 
 ## Data
 
-- Xenium sections: two 10x Xenium FFPE human breast sections, loaded as SpatialData from the public [Lamin `scverse/spatialdata-db`](https://lamin.ai/scverse/spatialdata-db) instance (artifacts `1lNcghy5uvSIIj1X` for sample 1 and `Uj7J4jjgzHw0lcm8` for sample 2).
-- H&E images: the H&E images and alignment matrices that 10x published with the "Xenium V1 FFPE Human Breast IDC With Addon" (sample 1) and "ILC With Addon" (sample 2) datasets. Notebook 01 registers each H&E image to the Xenium coordinates with the 10x alignment matrix and resamples it onto the Xenium pixel grid (`hne_baked`), so the Xenium cell masks can be used to measure the H&E image.
+- Xenium sections: the 10x datasets "FFPE Human Breast with Custom Add-on Panel", sample 1 = "Xenium V1 FFPE Human Breast IDC With Addon" and sample 2 = "ILC With Addon" (breast cancer). In [SpatialData-DB](https://lamin.ai/scverse/spatialdata-db) they are the datasets `10ajs` (IDC, Lamin artifact `B3zp6W2YeX4byunn`) and `10ajt` (ILC, Lamin artifact `k6XDMZ5acbyhjDn4`). Notebook 01 loads older uploads of the same data (`1lNcghy5uvSIIj1X`, `Uj7J4jjgzHw0lcm8`). Those uploads were later removed from SpatialData-DB as duplicates with identical count matrices, so use the datasets above to rerun.
+- H&E images: the H&E images and alignment matrices that 10x published with the same two datasets. Notebook 01 registers each H&E image to the Xenium coordinates with the 10x alignment matrix and resamples it onto the Xenium pixel grid (`hne_baked`), so the Xenium cell masks can be used to measure the H&E image.
 
 Data files are not in this repository (`data/` is ignored), except for three small result tables.
 
