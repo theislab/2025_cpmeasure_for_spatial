@@ -4,7 +4,7 @@ import squidpy as sq
 
 proj_dir = Path("/lustre/groups/ml01/projects/2025_ttreis_icml_cpmeasure")
 data_dir = proj_dir / Path("data")
-sample1_path = data_dir / Path("xenium_sample1_subset_baked_cropped.zarr")
+sample1_path = data_dir / Path("xenium_sample1_hexes300.zarr")
 
 sdata_sample1 = sd.read_zarr(sample1_path)
 
@@ -25,4 +25,4 @@ morpho_ski = sq.exp.calculate_image_features(
     inplace=False,
 )
 
-morpho_ski.to_csv(data_dir / "xenium_sample1_subset_morpho_ski.csv")
+morpho_ski.to_csv(data_dir / "xenium_sample1_hexes300_morpho_ski.csv")

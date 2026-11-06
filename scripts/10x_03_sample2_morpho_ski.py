@@ -17,7 +17,7 @@ morpho_ski = sq.exp.calculate_image_features(
     measurements=[
         "skimage:label",
         "skimage:label+image",
-        "cpmeasure:core",
+        # "cpmeasure:core",
         # "cpmeasure:correlation",
     ],
     show_progress_bar=True,
